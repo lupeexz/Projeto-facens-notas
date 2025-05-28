@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Facens</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1 class="header-tittle">Calculadora Facens</h1>
+        <a href="https://facens.br" target="_blank" rel="noopener">
+            <img class="header-img" src="./img/Adobe Express - file.png" alt="Logo Facens">
+        </a>
+    </div>
+    <main>
+        <form id="calc-form" autocomplete="off">
+            <label>Nota AC1:
+                <input type="number" step="0.01" id="ac1" min="0" max="10" required placeholder="0.00 a 10.00">
+            </label>
+            <label>Nota AC2:
+                <input type="number" step="0.01" id="ac2" min="0" max="10" required placeholder="0.00 a 10.00">
+            </label>
+            <label>Nota AG:
+                <input type="number" step="0.01" id="ag" min="0" max="10" required placeholder="0.00 a 10.00">
+            </label>
+            <label>Nota AF:
+                <input type="number" step="0.01" id="af" min="0" max="10" required placeholder="0.00 a 10.00">
+            </label>
+            <label id="sub-label" style="display:none;">Nota Substitutiva:
+                <input type="number" step="0.01" id="sub" min="0" max="10" placeholder="0.00 a 10.00">
+            </label>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </main>
+    <footer>
+        <p>Desenvolvido por 
+            <a href="https://github.com/lupeexz/lupeexz.github.io" target="_blank" rel="noopener">
+                Gustavo Lupi
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
